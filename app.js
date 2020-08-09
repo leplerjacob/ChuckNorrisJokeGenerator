@@ -6,7 +6,7 @@ function getJoke(e){
 
     const input = document.getElementById('number').value;
 
-    xhr.open("GET", `http://api.icndb.com/jokes/random/${input}`, true);
+    xhr.open("GET", `https://api.icndb.com/jokes/random/${input}`, true);
 
     xhr.onload = function() {
         if(this.status === 200) {
